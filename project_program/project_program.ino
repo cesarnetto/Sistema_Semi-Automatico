@@ -92,12 +92,7 @@ if(Qvermelho>0){
 
     delay(200);
 
-    //// -------- Avança e Abaixa
-    //  e1.write(8);
-    //  e2.write(15);
-    //  delay(temp);
-    //
-
+    
     // ------- Fecha Garra
     garra.write(0);
     delay(temp);
@@ -113,14 +108,7 @@ if(Qvermelho>0){
       delay(15);
     }
 
-    //// -------- Sobe
-    //  e1.write(80);
-    //  delay(temp);
-    //
-    //// -------- Recua
-    //  e2.write(80);
-    //  delay(temp);
-
+    
     // -------- Avança e Abaixa
     for (int pos = e1.read(); pos >= 40; pos--) {
       e1.write(pos);
@@ -160,12 +148,7 @@ if(Qazul>0){
 
     delay(200);
 
-    //// -------- Avança e Abaixa
-    //  e1.write(8);
-    //  e2.write(15);
-    //  delay(temp);
-    //
-
+    
     // ------- Fecha Garra
     garra.write(0);
     delay(temp);
@@ -181,15 +164,7 @@ if(Qazul>0){
       delay(15);
     }
 
-    //// -------- Sobe
-    //  e1.write(80);
-    //  delay(temp);
-    //
-    //// -------- Recua
-    //  e2.write(80);
-    //  delay(temp);
-
-
+    
     // -------- Avança e Abaixa
     for (int pos = e1.read(); pos >= 40; pos--) {
       e1.write(pos);
@@ -233,12 +208,7 @@ if(Qverde>0){
 
     delay(200);
 
-    //// -------- Avança e Abaixa
-    //  e1.write(8);
-    //  e2.write(15);
-    //  delay(temp);
-    //
-
+    
     // ------- Fecha Garra
     garra.write(0);
     delay(temp);
@@ -254,17 +224,7 @@ if(Qverde>0){
       delay(15);
     }
 
-    //// -------- Sobe
-    //  e1.write(80);
-    //  delay(temp);
-    //
-    //// -------- Recua
-    //  e2.write(80);
-    //  delay(temp);
-
- 
-
-
+    
     // -------- Avança e Abaixa
     for (int pos = e1.read(); pos >= 40; pos--) {
       e1.write(pos);
@@ -300,7 +260,7 @@ for (int pos = e2.read(); pos <= 170; pos++) {
 
 
 char getChar()
-// Wait for user to return a char over serial connection, returns uppercase version of any alpha char
+
 {
   while (Serial.available() == 0)
     ;
